@@ -1,0 +1,140 @@
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../Images/Chamara/mj\ background\ 003-1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E5E5E5;
+}
+
+main img {
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: #F2F2F2;
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+}
+
+/* Vertical navigation bar */
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 65px;
+    left: 0;
+    background-color: #4b4276;
+    padding: 30px 0;
+}
+
+.sidebar h2 {
+    color: #F2F2F2;
+    text-align: center;
+    margin-top: 0;
+}
+
+.sidebar ul {
+    padding-left: 25px;
+}
+
+.sidebar li {
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar li:hover {
+    background-color: #594F8D;
+}
+
+.sidebar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    color: #CCCCCC;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.sidebar-img-container {
+    text-align: center;
+}
+
+#sidebar-img {
+    border-radius: 5px;
+}
+
+/* Main content */
+.content {
+    margin-top: 3rem;
+    margin-left: 320px;
+    margin-right: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.quote {
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+blockquote {
+    margin-bottom: 0;
+}
+
+.to-top-button {
+    position: absolute;
+    width: 48px;
+    right: 2.5%;
+}
+
+.spotify-link {
+    text-align: center;
+    margin: 1rem;
+}
+
+.spotify-link a {
+    color: #1DB954;
+}
+
+.page-editor-link {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.page-editor-link a {
+    font-size: 1rem;
+    color: #E5E5E5;
+}
+
+.page-editor-link a:hover {
+    color: white;
+    text-shadow: 0.05px 0.05px 0 white;
+}

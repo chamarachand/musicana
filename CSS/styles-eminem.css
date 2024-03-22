@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../Images/eminem-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#vertical-nav {
+    display: block;
+    background-color: #242424;
+    position: fixed;
+    margin-top: 1%;
+    margin-left: 2%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
+    z-index: 2;
+}
+
+#vertical-nav a {
+    color: darkcyan;
+}
+
+#vertical-nav a:hover {
+    color: #f34079;
+}
+
+
+#eminem {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+#early-life-and-career h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 300px;
+    color: white;
+    text-decoration: underline;
+}
+
+#early-life-and-career p {
+    font-size: 20px;
+    color: white;
+    width: 700px;
+    text-align: justify;
+    margin-left: 300px;
+}
+
+#early-life-and-career #first-image {
+    position: relative;
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+}
+
+#impact-on-the-music-industry h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 300px;
+    color:white;
+    text-decoration: underline;
+}
+
+#impact-on-the-music-industry p {
+    font-size: 20px;
+    width: 700px;
+    text-align: justify;
+    margin-left: 300px;
+    color:white;
+}
+
+#impact-on-the-music-industry #second-image {
+    position: relative;
+    margin-left: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+}
+
+#legacy-and-future h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 300px;
+    color: white;
+    text-decoration: underline;
+}
+
+#legacy-and-future p {
+    font-size: 20px;
+    color: white;
+    width: 700px;
+    text-align: justify;
+    margin-left: 300px;
+}
+
+#eminem-awards h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 300px;
+    color: white;
+    text-decoration: underline;
+}
+
+#eminem-awards p {
+    font-size: 20px;
+    color: white;
+    width: 700px;
+    text-align: justify;
+    margin-left: 300px;
+}
+
+#eminem-awards #third-image {
+    position: relative;
+    margin-left: 500px;
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+}
+
+.bottom-to-top {
+    position: absolute;
+    bottom: -1870px;
+    margin-left: 10px;
+}
+
+.page-editor {
+    margin-top: -50px;
+    margin-left: 450px;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    border-color: blue;
+    width: 400px;
+    border-width: 5px;
+
+}
+
+.page-editor a {
+    font-size: 20px;
+    color: white;
+}
+
+
+

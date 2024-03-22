@@ -1,0 +1,131 @@
+:root{
+    --bg-colour: rgb(34, 34, 34);
+    --heading-colour:rgb(255, 136, 0);
+    --border-radius: 30px;
+    --bg-colour-2:rgb(81, 81, 81);
+    --little-pill-bg-colour:linear-gradient(to right, #d05e29 30%, #cda11d);
+}
+
+body{
+    background-image:url('../Images/sunset-dinuka.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--heading-colour);
+}
+
+h1{
+    text-align: center;
+    color: var(--heading-colour);
+    background-color: var(--bg-colour);
+    border-radius: var(--border-radius);
+    width: fit-content;
+    padding-bottom: 10px;
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 40px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-weight: 100;
+}
+
+#main{
+    background-color: var(--bg-colour);
+    border-radius: var(--border-radius);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1%;
+    padding: 1%;
+    opacity: 97%;
+}
+
+#my-face{
+
+    border: inset 4px black;
+    width:15%;
+    height:20%;
+}
+
+#pill-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pill shaped div element for the name */
+#top-pill{
+    background-color: var(--bg-colour-2);
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    font-weight: 100;
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* pill shaped div element for the role */
+#bottom-pill{
+    background-color: var(--bg-colour-2);
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    font-weight: 100;
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* coloured pill shaped div elements to the left of the big pills */
+.little-pill{
+    background:var(--little-pill-bg-colour);
+    border-radius: var(--border-radius);
+    font-size: 20px;
+    font-weight: 100;
+    width: fit-content;
+    padding-left: 5px;
+    padding-top: 0;
+    padding-bottom: 3px;
+    padding-right: 0;
+    margin-right: 5px;
+}
+
+#first-p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.flex-div{
+    display: flex;
+    justify-content: center;
+}
+
+.box-div{
+    background-color: var(--bg-colour-2);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    width: 40%;
+    margin: 2%;
+    padding-top: 0;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}

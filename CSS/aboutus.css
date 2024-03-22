@@ -1,0 +1,109 @@
+body {
+	background-image : url('../Images/aboutusbackground.jpg');
+	margin : 0;
+}
+
+
+
+/*title of the page*/
+
+#content-title {
+	text-align : center;
+	font-size : 80px;
+	color : white;
+}
+
+
+
+/*the outermost div containing the divisons that contains the image and details of all 4 members*/
+
+#frame {
+	height : 340px;
+	position :relative;
+	top : -50px;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	column-gap : 1.5%;
+}
+
+
+
+/*container that contains the image and the details of the relavant member*/
+
+.container {
+	position : relative;
+	width : 300px;
+	height : 300px;
+	cursor : pointer;
+}
+
+/*image of each member*/
+
+#frame img {
+	height : 300px;
+	width : 300px;
+}
+
+
+
+/*parent division that contains the division details of each member*/
+
+.info {
+	background-color : black;
+	opacity : 0.8;
+	position : absolute;
+	bottom : 0;
+	width : 300px;
+	overflow : hidden;
+	height : 0;
+	transition-duration : 0.7s;
+}
+
+
+
+/*changing the property of the parent div of the div containig details of each member whenever mouse hovers over the container that cointains the image and the details of the relavant member*/
+
+.container:hover .info {
+	height : 150px;
+}
+
+
+
+/*changing the property of the image of each member whenever mouse hovers over the container that cointains the image and the details of the relavant member*/
+
+.container:hover img {
+	opacity : 0.8;
+}
+
+
+
+/*div containing the details of each member*/
+
+.text {
+	color : white;
+	font-size : 25px;
+	text-align : center;
+}
+
+
+
+/*link to the page editor page*/
+
+#avatar {
+	color : white;
+	position : relative;
+	bottom : 12%;
+	left : 1%;
+	text-decoration : none;
+	font-size : 18px;
+}
+
+
+
+/*avatar used as a link to the page editor page*/
+
+#avatar-pic {
+	height : 43px;
+	width : 43px;
+}

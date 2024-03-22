@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/logo-hasitha.png">
+    <link rel="stylesheet" href="../CSS/styles-image-gallery.css">
+    <link rel="stylesheet" href="../CSS/header-footer-gallery.css">
+    <link rel="stylesheet" href="../CSS/scroll-bar.css">
+    <title>The Music World - 2</title>
+</head>
+
+<body>
+    <!-- Top navigation bar -->
+    <header>
+        <!-- Top navigation bar image -->
+        <div id="logo-div">
+            <a href="home.html">
+                <img src="../Images/logo-hasitha.png" alt="logo" width="80px" height="50px">
+            </a>
+        </div>
+        <div class="nav">
+            <a id="home" href="home.html">HOME</a>
+            <a id="comments" href="commentsform.html">COMMENTS</a>
+            <a id="shop" href="shopping-cart.html">SHOP</a>
+            <a id="quiz" href="quizApp.html">QUIZ</a>
+            <a id="gallery" href="image-gallery.html" class="active">GALLERY</a>
+            <a id="sitemap" href="sitemap.html">SITE MAP</a>
+            <a id="aboutus" href="aboutus.html">ABOUT US</a>
+        </div>
+        <hr id="hr1">
+    </header>
+    </div>
+
+    <!-- Add three buttons for change font size of the web page -->
+    <div class="wrapper">
+        <div class="buttons">
+            <span class="button active2" onclick="document.getElementById('text').style.fontSize = '0.8em'">A</span>
+            <span class="button" onclick="document.getElementById('text').style.fontSize = '0.9em'">A</span>
+            <span class="button" onclick="document.getElementById('text').style.fontSize = '1.0em'">A</span>
+            
+            <!-- Add a button to change the web page color randomly -->
+            <button id="random" onclick="changeColor()">Random</button>
+            
+            <!-- Three buttons for select specific color for the web page -->
+            <div class="box">
+                <a onclick="colorBox(id)" id="a">#000000</a> <!-- Black color -->
+                <a onclick="colorBox(id)" id="b">#0059b3</a> <!-- Blue color -->
+                <a onclick="colorBox(id)" id="c">#ffffff</a> <!-- White color -->
+            </div>
+        </div>
+
+        <div class="content" id="text">
+            <h1>Most Iconic Music Festivals In The World</h1>
+            <div class="new-container">
+
+                <!-- For Coachella music festival-->
+                <div class="festival" id="festival-image-1">
+                    <h1 id="festival-1-description">Coachella</h1>
+                    <div class="festival-content" id="festival-1">
+                        <div class="festival-header">
+                            <img src="../Images/coachella.jpg">
+                            <div class="information">
+                                <h1 class="name">Coachella</h1>
+                            </div>
+                        </div>
+                        <div class="festival-body">
+                            <p>
+                                Coachella is an annual music and arts event held in California's Coachella Valley.
+                                It usually spans two weekends in April and has a varied lineup of musical performances,
+                                from well-known headliners to up-and-coming performers.
+                                In addition to music, the event features art installations and sculptures, as well as
+                                food and beverage vendors.
+                                Coachella is now a global phenomenon that attracts visitors from all over the globe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Glastonbury music festival-->
+                <div class="festival" id="festival-image-2">
+                    <h1 id="festival-2-description">Glastonbury Festival</h1>
+                    <div class="festival-content" id="festival-2">
+                        <div class="festival-header">
+                            <img src="../Images/glastonbury.jpg">
+                            <div class="information">
+                                <h1 class="name">Glastonbury Festival</h1>
+                            </div>
+                        </div>
+                        <div class="festival-body">
+                            <p>
+                                A well-known annual music and arts celebration, Glastonbury celebration is
+                                hosted in Glastonbury, England. It includes a diverse lineup of musical acts
+                                from a variety of genres as well as other artistic and cultural activities. It has 
+                                established itself as a cultural establishment both in the UK and abroad thanks
+                                to its innovative social and environmental projects, distinct atmosphere, and sense of community. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- For Summerfest music festival-->
+                <div class="festival" id="festival-image-3">
+                    <h1 id="festival-3-description">Summerfest</h1>
+                    <div class="festival-content" id="festival-3">
+                        <div class="festival-header">
+                            <img src="../Images/summerfest.jpg">
+                            <div class="information">
+                                <h1 class="name">Summerfest</h1>
+                            </div>
+                        </div>
+                        <div class="festival-body">
+                            <p>
+                                Over 800 acts from various genres, including rock, pop, hip-hop, and country,
+                                perform at the annual Summerfest music event in Milwaukee, Wisconsin,
+                                which lasts 11 days. Over 700,000 people attend it annually, making it the
+                                biggest music event in the world. Summerfest offers more than just music; it
+                                also has food stands, engaging displays, and other attractions. The event,
+                                which takes place on the shores of Lake Michigan, is a Midwest summertime highlight.   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- For Tomorrowland music festival-->
+                <div class="festival" id="festival-image-4">
+                    <h1 id="festival-4-description">Tomorrowland</h1>
+                    <div class="festival-content" id="festival-4">
+                        <div class="festival-header">
+                            <img src="../Images/tomorrowland.jpg">
+                            <div class="information">
+                                <h1 class="name" id="world">Tomorrowland</h1>
+                            </div>
+                        </div>
+                        <div class="festival-body">
+                            <p>
+                                In Boom, Belgium, there is a yearly electronic dance music festival called
+                                Tomorrowland, which draws about 400,000 people. Top DJs, numerous stages,
+                                and EDM genres like trance, house, and techno are all featured. The festival is
+                                well-known for its theatrical stage performances that are both immersive and
+                                interesting and feature stunning set designs and visual effects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link external Javascript file -->
+    <script src="../Javascript/script-image-gallery.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <hr id="hr2">
+        <div class="footerdiv">
+            <div class="columndiv">
+                <a href="home.html">Home</a>
+                <a href="commentsform.html">Comments</a>
+                <a href="shopping-cart.html">Shop</a>
+                <a href="quizApp.html">Quiz</a>
+                <a href="image-gallery.html">Gallery</a>
+                <a href="sitemap.html">Site Map</a>
+                <a href="aboutus.html">About Us</a>
+                <br>
+            </div>
+            <div class="columndiv">
+                <div class="vertical-line"></div>
+            </div>
+            <div class="columndiv">
+                <a href="pinkfloyd.html">Pink Floyd</a>
+                <a href="michael-jackson.html">Michael Jackson</a>
+                <a href="beyonce.html">Beyonce</a>
+                <a href="eminem.html">Eminem</a>
+                <br><br>
+            </div>    
+            <div class="columndiv">
+                <div class="vertical-line"></div>
+            </div>
+            <div class="columndiv">
+                <p id="contactus">Contact Us</p>
+                <p>chamara.20220480@iit.ac.lk</p>
+                <p>dinuka.20220315@iit.ac.lk</p>
+                <p>aakif.20220471@iit.ac.lk</p>
+                <p>hasitha.20220430@iit.ac.lk</p>
+                <br>
+            </div>
+            <div class="columndiv">
+                <div class="vertical-line"></div>
+            </div>
+            <div class="columndiv">
+                <div id="sentence">
+                    Website created by Group G-2
+                </div><br>   
+            </div>
+        </div>     
+    </footer>
+
+    <!-- Bottom to top button -->
+    <div class="bottom-to-top">
+        <a href="#"><img src="../Images/icon-hasitha.png" alt="Button for go to top of the web page"></a>
+    </div>
+
+    <!-- Link for page editor webpage -->
+    <div class="page-editor">
+        <a href="page-editor-Hasitha.html">Link to editor's page</a>
+    </div>
+</body>
+</html>

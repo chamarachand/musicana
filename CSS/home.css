@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+img{
+    z-index: 2;
+}
+
+#back-image{
+    background-image: url('../Images/yamaha3-dinuka.jpg');
+    background-size:1700px 900px;
+    background-position:  center;
+    background-attachment: fixed;
+    animation: slideIn 2.5s ease-in forwards;
+    z-index: 3;
+}
+
+@keyframes slideIn{
+    from{
+        background-size: 1770px 970px;
+    }
+    to{
+        background-size: 1700px 900px;
+    }
+}
+
+/* welcome message */
+
+#welcome{
+    display: flex;
+    background: none;
+    flex-direction: row;
+}
+
+#welcome img{
+    image-rendering: auto; 
+    display: inline-flex;
+    padding-left: 8%;
+    padding-top: 9%;
+    width: 35%;
+    height: 14%;
+}
+
+#welcome-msg{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 6%;
+    font-size:120px;
+    color: rgb(255, 255, 255);
+}
+
+#welcome3{
+    background: linear-gradient(to right, #f34079 40%, #fc894d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#welcome1{
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in forwards;
+}
+
+#welcome2{
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+}
+
+#welcome3{
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(0, 10px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+#addicts-sentence{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color:#f34079;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+#dealer-sentence{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color:#fc894d;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+#image-links{
+    background-color: #1c1c1c;
+    padding-top: 1%;
+    padding-bottom: 8%;
+    display: block;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+#image-links a{
+    color: white;
+}
+
+/* heading above the images */
+#image-links h2{
+    margin-top: 80px;
+    font-size:30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.image-container p{
+    background: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.image-container a{
+    z-index: 2;
+}
+
+/* the glowing parts behind the images */
+#mj-glow{
+    padding-top: 30px;
+    padding-left: 47px;
+    padding-right: 330px;
+    width: 2%;
+    top: 300px;
+    right: -59px;
+    box-shadow: -35px -40px 400px 30px #e1396e;
+    background-color: #a82f5527;
+    position: relative;
+}
+
+#eminem-glow{
+    padding-top:30px;
+    padding-left: 47px;
+    padding-right: 330px;
+    width: 2%;
+    right: -59px;
+    top: -200px;
+    box-shadow: -65px 10px 400px 30px #e1396e;
+    background-color: #a82f5527;
+    position: relative;
+}
+
+#blue-glow{
+    padding-top:30px;
+    padding-left: 47px;
+    padding-right: 330px;
+    width: 2%;
+    right: -450px;
+    top: -420px;
+    box-shadow: 55px 10px 500px 30px #2600ff;
+    background-color: #2f35a827;
+    position: relative;
+}
+
+.image-container{
+    padding-bottom: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* page editor */
+#editor-link{
+    color: white;
+    margin-left: 45.1%;
+    padding-bottom: 5%;
+}
+
+#editor-link:hover{
+    color:rgb(255, 95, 37);
+}

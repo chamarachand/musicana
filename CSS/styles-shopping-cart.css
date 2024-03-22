@@ -1,0 +1,419 @@
+/* General */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../Images/Chamara/shop\ background\ copy\ 3\ compressed.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+main {
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+}
+
+/* Sub Navigation bar */
+.sub-navigation {
+    display: flex;
+    color: #FAF9F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(50, 50, 50);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 5rem;
+    font-size: 1.2rem;
+}
+
+.sub-navigation h1 {
+    padding-left: 1.8rem;
+}
+
+.sub-navigation img {
+    width: 4.5rem;
+}
+
+#cart-button {
+    color: #E5E5E5;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#cart-button:hover {
+    color: #ADD8E6;
+}
+
+/* Grid containe which contains the sales items */
+.container-one {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /* grid-template-columns: auto auto auto 35rem; */
+    grid-template-columns: 30fr 30fr 30fr 35fr;
+    row-gap: 3rem;
+    column-gap: 2.5rem;
+    grid-row: 1 / -1;
+    margin-left: 20px;
+}
+
+.sales-item {
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+/* Each sales item */
+.sales-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.7);
+}
+
+.sales-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.sales-item h2 {
+    font-size: 1.6rem;
+}
+
+.sales-item p {
+    font-size: 1.4rem;
+}
+
+.add-to-cart {
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    padding: 7px 10px;
+    margin-bottom: 15px;
+    background-color: rgb(20, 20, 20);
+    color: azure;
+}
+
+.add-to-cart:hover {
+    background-color: black;
+}
+
+/* Shopping Cart */
+.cart {
+    opacity: 0;
+    position: fixed;
+    top: 15rem;
+    right: 0;
+    /* width: 300px; */
+    width: 22.5%;
+    background-color: rgb(43, 43, 43);
+    color: #E5E5E5;
+    border: solid #F5F5DC;
+    border-width: 0.5px 0 0.5px 0.5px;
+    min-height: 80%;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transform: scale(0.8);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.cart.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.cart-content {
+    /* max-height: 30rem; */
+    max-height: 45vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #0599B7 #F5F5F5;
+}
+
+.cart-content::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+}
+
+.cart-content::-webkit-scrollbar-thumb {
+    background-color: #0599B7;
+}
+
+#cart-close-button {
+    position: absolute;
+    text-align: end;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#cart-close-button:hover {
+    color: gray;
+}
+
+#cart-button-container {
+    display: flex;
+    align-items: center;
+}
+
+#cart-item-count {
+    background-color: red;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+
+.cart h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: 3fr 6fr 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.cart-item-details * {
+    margin: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.cart-item-quantity {
+    font-size: 1.2rem;
+    width: 3rem;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.cart .remove-button {
+    color: rgb(180, 180, 180);
+    font-size: 18px;
+    text-align: center;
+    transition: color 0.1s;
+    cursor: pointer;
+}
+
+.cart .remove-button:hover {
+    color: crimson;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid grey;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.total-price p {
+    margin: 0;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart .btn {
+    display: flex;
+    margin: 1.6rem auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7.5px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.1s;
+}
+
+.cart .btn:disabled:hover {
+    cursor: auto;
+    background-color: cornflowerblue;
+}
+
+.cart .btn:hover {
+    background-color: rgb(100, 175, 255);
+}
+
+/* Black semi-transparent overlay for pop up dialog boxes */
+#overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 5;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* 'Item has already been added' dialog box */
+#already-added-box {
+    background-color: rgb(43, 43, 43);
+    color: white;
+    width: 40rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    transition: transform 0.4s;
+}
+
+#already-added-box.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#already-added-box img {
+    height: 60px;
+    margin-top: -50px;
+}
+
+#popup-close-button {
+    background-color: cornflowerblue;
+    color: white;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 10rem;
+    margin-top: 10px;
+}
+
+/* Dialog box that asks for user name and email */
+#primary-data-box {
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    width: 55rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    justify-content: center;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    z-index: 10;
+    transition: transform 0.3s;
+}
+
+#primary-data-box.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#dialog-close-button {
+    cursor: pointer;
+    font-size: 25px;
+    padding: 8px 12px;
+}
+
+.close-button-container {
+    text-align: end;
+}
+
+.primary-data-box-content {
+    text-align: center;
+}
+
+.primary-data-box-content p:first-of-type {
+    margin-top: 0;
+}
+
+#primary-data-box img {
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+}
+
+#primary-data-box .btn {
+    cursor: pointer;
+    margin: 1.5rem auto 2rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+}
+
+input {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    outline: 0;
+    transition: border 0.15s, box-shadow 0.15s;
+}
+
+input:focus {
+    border: 1px solid #86b7fe;
+    box-shadow: 0 0 0 1px #b9d3fa;
+}
+
+input.error {
+    border: 1px solid #ff3860;
+    box-shadow: 0 0 0 1px #ffcccb;
+}
+
+.error-box {
+    color: #ff3860;
+    font-size: 1rem;
+    height: 10px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+}
+
+.error-box p {
+    margin: 0;
+}
+
+.total-pass {
+    display: none;
+}
+
+/* Link for the page editor page */
+.page-editor-link {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+.page-editor-link a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #E5E5E5;
+}
+
+.page-editor-link a:hover {
+    color: white;
+    text-shadow: 0.05px 0.05px 0 white;
+}

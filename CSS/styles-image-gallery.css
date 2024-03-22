@@ -1,0 +1,301 @@
+/* For scroll smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:rgb(36, 36, 36);
+    background-size: cover;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+/* CSS for three buttons of change font size of the web page */
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.wrapper .buttons .button {
+    padding: 0 5px;
+    display: flex;
+    background-color: #515151;
+    color:gold;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-style:inset;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .buttons .button.active2 {
+    font-size: 0.7em;
+    background-color:lightseagreen;
+}
+
+.wrapper .buttons .button:nth-child(2) {
+    font-size: 1.2em;
+}
+
+.wrapper .buttons .button:nth-child(3) {
+    font-size: 1.5em;
+}
+
+.wrapper .content {
+    font-size: 0.8em;
+    line-height: 30px;
+    transition: 0.5s;
+    text-align: justify;
+}
+
+.wrapper .content .h1, .wrapper .content .h2 {
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+/* CSS for Most Iconic Music Festivals In The World sentence */
+h1 {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 0 b;
+}
+
+/* CSS for random color selector button */
+#random {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: gold;
+    display: grid;
+    border: 5px solid gray;
+    border-radius: 20px;
+    background-color: gray;
+    letter-spacing: 1.5px;
+    padding: 3px;
+}
+/* CSS for style specific color selector */
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 0 20px;
+    margin-right: 100px;
+}
+
+.box a {
+    display: flex;
+    justify-content: flex-end;
+    width: 12px;
+    height: 12px;
+    text-indent: -2000px;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-left: 15px;
+    cursor: pointer;
+    border-style: inset;
+}
+
+#a {
+    background: black;
+
+}
+
+#b {
+    background:#0059b3;
+}
+    
+#c { 
+    background: white;
+}
+
+/* CSS for content */
+.new-container {
+    display: flex;
+
+}
+
+.festival {
+    position: relative;
+    top: -50px;
+    width: 280px;
+    margin: 50px 25px;
+    height: 200px;
+    border-radius: 25px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px, #fff, 0 0 0 5px, #246df5 ;
+    transition: 0.2s;
+}
+
+.festival:hover {
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #d10fd8;
+}
+
+.festival-content {
+    position: relative;
+    padding: 10px;
+    width: 50vw;
+    height: 55vh;
+    background-color: #00ff55;
+    border: 1px solid #515151;
+    border-radius: 10px;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transform: 0.5s;
+}
+
+.festival-content .festival-header {
+    display: flex;
+    top:100px
+}
+
+.festival-content .festival-header img {
+    grid-column: 1/2;
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    
+}
+
+.festival-content .festival-content .information {
+    margin-left: 1em;
+}
+
+.festival-content .festival-header .information .name {
+    color:#ff0266;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.festival-content .festival-body {
+    padding: 1em;
+}
+
+.festival-content .festival-body p {
+    font-size: 1.05em;
+    color:blue;
+}
+
+.festival:hover .festival-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-15%) translateY(0px);
+}
+
+#festival-1 {
+    height: 44vh;
+    top: 20px;
+    left: 105px;
+    z-index: 10;
+}
+
+#festival-2 {
+    height: 44vh;
+    top: 10px;
+    z-index: 10;
+}
+
+#festival-3 {
+    height: 46vh;
+    top: 10px;
+    right: 180px;
+    z-index: 10;
+    
+}
+
+#festival-4 {
+    width: 650px;
+    height: 44vh;
+    top: 10px;
+    right: 378px;
+    z-index: 10;
+}
+
+.festival-body {
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#festival-1-description {
+    color: white;
+}
+
+#festival-2-description {
+    color: white;
+}
+
+#festival-3-description {
+    color: white;
+}
+
+#festival-4-description {
+    color: white;
+
+}
+
+#festival-image-1 {
+    background-image: url(../Images/coachella.jpg);
+}
+
+#festival-image-2 {
+    background-image: url(../Images/glastonbury.jpg);
+}
+
+#festival-image-3 {
+    background-image: url(../Images/summerfest.jpg);
+}
+
+#festival-image-4 {
+    background-image: url(../Images/tomorrowland.jpg);
+}
+
+/* CSS for bottom to top button */
+.bottom-to-top {
+    position: absolute;
+    bottom: -15.0%;
+    margin-left: 10px;
+}
+
+/* CSS for page editor link */
+.page-editor {
+    margin-top: -70px;
+    margin-left: 500px;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    border-color: blue;
+    border-width: 5px;
+    width: 400px;
+}
+
+.page-editor a {
+    font-size: 20px;
+    color: red;
+}
+
+
+

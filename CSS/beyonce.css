@@ -1,0 +1,268 @@
+html {
+	 scroll-behavior : smooth;
+ }
+
+
+
+body {
+	background-image : url('../Images/images-aakif/extracontentbackground.jpg');
+	background-attachment : fixed;
+	color : white;
+	background-repeat : no-repeat;
+	margin : 0;
+}
+
+
+
+/*below are the stylings for the table of contents */
+#tableof-content {
+	height: 53%;
+	width: 200px;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #28282B;
+	transition: 0.5s;
+	border-radius : 0 20px 20px 0;
+	position : fixed;
+	top : 80px;
+	padding-top : 20px;
+	line-height : 70px;
+	border : 4px solid black;
+	
+}
+
+
+#tableof-content a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  padding-top : 18px;
+  
+}
+
+
+#tableof-content a:hover {
+	color : #FFF01F;
+}
+
+
+/*outer division containing the*/
+
+#outer-frame {
+	margin-left : 200px;
+}
+
+
+
+/*title of the content*/
+
+#title {
+	font-size : 80px;
+	text-align : center;
+}
+
+
+
+
+/*division holding the first quatation*/
+
+#quote-div {
+	position : relative;
+	left : 60%;
+	top : 90px;
+	width : 400px;
+}
+
+
+/*first quotation written at the top*/
+
+#quote {
+	line-height : 70px;
+}
+
+
+
+/*2nd quatation of the webpage*/
+
+#quote2 {
+	line-height : 70px;
+}
+
+
+/*artsist image at the top*/
+
+#pic1 {
+	position : relative;
+	bottom : 250px;
+	left : 60px;
+	height : 550px;
+	width : 580px;
+	
+}
+
+
+
+/*division containing the 1st paragraph*/
+
+#intro-div {
+	margin : 20px;
+	
+	position : relative;
+	bottom : 130px;
+}
+
+/*1st paragraph*/
+#intro-content {
+	font-size : 20px;
+	line-height : 30px;
+}
+
+
+
+/*division containing the 2nd paragraph*/
+#earlyLife-div {
+	margin : 20px;
+	
+	position : relative;
+	bottom : 130px;
+}
+
+
+
+/*2nd paragraph*/
+#earlyLife-content {
+	font-size : 20px;
+	line-height : 30px;
+}
+
+
+
+/*division containing the 3rd paragraph*/
+#solo-career {
+	clear : both;
+	margin : 20px;
+	position : relative;
+	top : 20px;
+}
+
+
+/*3rd paragraph*/
+#soloCareer-content {
+	font-size : 20px;
+	line-height : 30px;
+}
+
+
+
+/*division containing the 4th paragraph*/
+#activism-div {
+	margin : 20px;
+	position : relative;
+	top : 20px;
+}
+
+/*4th paragraph*/
+#activism-content {
+	font-size : 20px;
+	line-height : 30px;
+}
+
+
+
+/*2nd image in webpage*/
+#pic2 {
+	height : 580px;
+	width : 610px;
+	
+	position :relative;
+	right : 50px;
+	float : right;
+}
+
+
+
+/*2nd quote in the webpage*/
+#quote2-div {
+	width : 400px;
+	float : right;
+	
+	position : relative;
+	right : 8%;
+	top : 200px;	
+}
+
+
+
+/*3rd image*/
+#pic3{
+	height : 420px;
+	width : 730px;
+	
+	position : relative;
+	top : 20px;
+	left : 50px;
+}
+
+
+
+/*3rd quatation*/
+#quote3 {
+	font-size : 60px;
+	text-align : center;
+	margin : 60px;
+}
+
+
+
+/*link to page editor*/
+
+#avatar {
+	color : white;
+	position : relative;
+	left : 85%;
+	text-decoration : none;
+	font-size : 18px;
+}
+
+
+/*avatar used as link for the page editor page*/
+
+#avatar-pic {
+	height : 50px;
+	width : 50px;
+}
+
+
+
+
+/*back to top icon at the bottoom*/
+
+#backto-top {
+	position :relative;
+	left : 93%;
+	bottom : 15%;
+}
+
+/*artist's music on spotify. div for the link at the bottom*/
+
+#spotify-link {
+	display : inline;
+	position : relative;
+	top : 550%;
+	left : 42%;
+}
+
+
+#spotify-link a {
+	text-decoration : none;
+	color : #1DB954;
+	font-size : 20px;
+	font-weight : bold;
+}
+
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel = "stylesheet" href = "../CSS/quizApp.css">
+		<link rel = "stylesheet" href = "../CSS/nav&footer.css">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link rel = "icon" href = "../Images/images-aakif/websitelogo.png">
+		<title>Welcome to Quiz</title>
+	</head>
+
+
+<body>
+
+	<div id = "outer-frame">
+		
+		
+		<!--navigation bar-->
+		
+		<header>
+			<div id="logo-div">
+				<a href="home.html">
+					<img src="../Images/images-aakif/websitelogo.png" alt="logo" width="80" height="50">
+				</a>
+			</div>
+			<div class="nav">
+				<a id="home" href="home.html">HOME</a>
+				<a id="comments" href="commentsform.html">COMMENTS</a>
+				<a id="shop" href="shopping-cart.html">SHOP</a>
+				<a id="quiz" href="quizApp.html" class = "active">QUIZ</a>
+				<a href="image-gallery.html">GALLERY</a>
+				<a id="sitemap" href="sitemap.html">SITE MAP</a>
+				<a id="aboutus" href="aboutus.html">ABOUT US</a>
+			</div>
+			<hr id="hr1">
+		</header>
+	
+		<a id = "myavatar" href = "pageEditor-aakif.html" target = "_blank"><img src = "../Images/images-aakif/avatar.png" alt = "avatar" id = "avatar-pic">Personal</a>
+		
+		
+		<!--quiz section-->
+		
+		<div id = "quiz-box">
+		
+		
+			<div id = "count">
+				<div class = "counter"><p>Question <span id = "question-no"></span>/10</p></div>
+				<div class = "counter"><p>Timer : <span id = "time"></span></p></div>
+			</div>
+			
+			
+			
+			<div id = "content-box">
+				<div id = "pic-box" class = "second-set"><img src = "../Images/quiz1.jpg" alt = "Quiz Image"></div>
+				<div id = "question" class = "second-set"></div>
+			</div>
+			
+			
+			
+			<div id = "inner-container">
+				<div class = "choice" id = "div-option1"><label for = "choiceA" id = "choice-label1"></label><input type = "radio" id = "choiceA" class = "radio-button" value = "1" name = "button"></div>
+				<div class = "choice" id = "div-option2"><label for = "choiceB" id = "choice-label2"></label><input type = "radio" id = "choiceB" class = "radio-button" value = "2" name = "button"></div>
+				<div class = "choice" id = "div-option3"><label for = "choiceC" id = "choice-label3"></label><input type = "radio" id = "choiceC" class = "radio-button" value = "3" name = "button"></div>
+				<div class = "choice" id = "div-option4"><label for = "choiceD" id = "choice-label4"></label><input type = "radio" id = "choiceD" class = "radio-button" value = "4" name = "button"></div>
+				
+				<button id = "button"><b>N E X T</b></button>
+				
+				
+				<!--frame to appear when user skips without selecting any choice-->
+				
+				<div id = "option-validator">
+				
+					<h1 id = "validator-head">NO OPTIONS PICKED</h1>
+					<button id = "continue"><b>c o n t i n u e</b></button>
+					
+				</div>
+			
+			</div>
+			
+		
+			
+			<!--feedback box-->
+			
+			<div  id = "feedback-pane">
+				<br><h2 id = "headingfb" class = "feedback-content">CONGRATULATIONS: QUIZ COMPLETED</h2><br><br>
+				<p class = "feedback-content">Question : 10</p>
+				<p id = "falsefb" class = "feedback-content"></p>
+				<p id = "scorefb" class = "feedback-content"></p>
+				<p id = "gradefb" class = "feedback-content"></p>
+				<p id = "timefb" class = "feedback-content"></p>
+				<p id = "commentfb" class = "feedback-content"></p>
+			
+				<button class = "feedbackbtn" id = "reset"><b>S T A R T &nbsp; A G A I N</b></button>
+			</div>
+		</div>
+		
+		
+		
+		<!--start frame-->
+		
+		<div id = "start-pane">
+			<h1 id = "start-head">Q&nbsp; U&nbsp; I&nbsp; Z</h1>
+			<button id = "startbtn"><b>S T A R T&nbsp; &nbsp;Q U I Z</b></button>
+			<img src = "../Images/images-aakif/startpaneicon.png" alt = "icon" id = "icon">
+		</div>
+		
+	</div>	
+	
+	<br><br><br><br><br><br><br>
+
+
+
+	<!--footer section-->
+
+	<hr id="hr2">
+	<footer>
+		<div class="footer-div">
+			<div class="column-div">
+				<a href="home.html">Home</a>
+				<a href="commentsform.html">Comments</a>
+				<a href="shopping-cart.html">Shop</a>
+				<a href="quizApp.html">Quiz</a>
+				<a href="image-gallery.html">Gallery</a>
+				<a href="sitemap.html">Site Map</a>
+				<a href="aboutus.html">About Us</a>
+				<br>
+			</div>
+			<div class="column-div">
+				<div class="vertical-line"></div>
+			</div>
+			<div class="column-div">
+				<a href="pinkfloyd.html">Pink Floyd</a>
+				<a href="michael-jackson.html">Michael Jackson</a>
+				<a href="beyonce.html">Beyonce</a>
+				<a href="eminem.html">Eminem</a>
+				<br><br>
+			</div>    
+			<div class="column-div">
+				<div class="vertical-line"></div>
+			</div>
+			<div class="column-div">
+				<p id="contactus">Contact Us</p>
+				<p>chamara.20220480@iit.ac.lk</p>
+				<p>dinuka.20220315@iit.ac.lk</p>
+				<p>aakif.20220471@iit.ac.lk</p>
+				<p>hasitha.20220430@iit.ac.lk</p>
+				<br>
+			</div>
+			<div class="column-div">
+				<div class="vertical-line"></div>
+			</div>
+			<div class="column-div">
+				<div id="sentence">
+					Website created by Group G-2
+				</div><br>   
+			</div>
+		</div>     
+	</footer>
+
+	<script src = "../Javascript/quizApp.js"></script>
+		
+	</body>
+</html>

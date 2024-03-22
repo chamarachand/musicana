@@ -1,0 +1,130 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-image: url('../Images/form-dinuka.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+#vertical-nav{
+    display: block;
+    background-color: #1c1c1c;
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 4% 4% 4% 4%;
+    border-radius: 15px;
+    font-size: 30px;
+    
+}
+
+#vertical-nav a{
+    color: white;
+}
+
+#vertical-nav a:hover{
+    color: #f34079;
+}
+
+/* content div to the right of the vertical navigation bar */
+#main{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 24%;
+    margin-right: 30px;
+    display: block;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* for the spotify link */
+#main a{
+    margin-left: 42%;
+    color: rgb(26, 173, 82);
+    font-size: 20px;
+}
+
+.quote{
+    float: right;
+    padding-right: 10%;
+}
+
+#main img{
+    margin: 0;
+    border: 1px gray solid;
+}
+
+.img-src{
+    font-size: 15px;
+
+}
+
+#title{
+    text-align: left;
+    margin-bottom:60px;
+    margin-left: 32%;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    margin-top: 60px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.pic-type-1{
+    width:40%;
+    height:10%;
+}
+
+#pic3{
+    width:40%;
+    height:40%;
+}
+
+#main p{
+    font-size: 25px;
+}
+
+/* picture right above the footer */
+#banner{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+
+/* page editor */
+#editor-link{
+    color: white;
+    margin-left: 45.1%;
+    padding-bottom: 5%;
+}
+
+#editor-link:hover{
+    color:rgb(255, 95, 37);
+}
+
+/* back-to-top button */
+#icon{
+    float: right;
+    position: relative;
+    bottom: 40px;
+}
+
+#icon img{
+    border: none;
+}

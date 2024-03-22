@@ -1,0 +1,222 @@
+/* For scroll smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../Images/svg-background.jpg");
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Head topic of the web page */
+#middle-sitemap {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+}
+
+.single-circle {
+    top: 0;
+    bottom: 100px;
+    left: 200px;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+
+/* styling home: circle, text, circle-hover and text-hover separatly */
+#home-circle {
+    fill: rgb(0, 51, 102);
+    stroke: red;
+    stroke-width: 5;
+    transition: 0.8s;
+}
+
+#home-text {
+    text-anchor: middle;
+    fill: white;
+    font-size: 20px;
+}
+
+#home-circle:hover {
+    fill: rgb(0, 255, 0);
+    transition: 0.8s;
+}
+
+#home-text:hover {
+    fill: rgb(0, 255, 0);
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    transition: 0.7s;
+}
+
+/* Styling for five svg circles. */
+.circle-container {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    text-anchor: middle;
+    bottom: 100px;
+    margin: auto;
+}
+
+.circle {
+    width: 100vw;
+    height: 38vh;
+}
+
+/* I have to use separate css for five circles: circle, text, circle-hover and text-hover */
+#comments-circle {
+    fill: rgb(0, 51, 102);
+    stroke: red;
+    stroke-width: 5;
+}
+
+#comments-text {
+    font-size: 15px;
+    fill: white;
+}
+
+#comments-circle:hover {
+    fill: rgb(0, 255, 0);
+    transition: 0.8s;
+}
+
+#comments-text:hover {
+    fill: rgb(0, 255, 0);
+    font-size: 20px;
+    letter-spacing: 0.25em;
+    transition: 0.7s;
+}
+
+#shop-circle {
+    fill: rgb(0, 51, 102);
+    stroke: red;
+    stroke-width: 5;
+}
+
+#shop-text {
+    font-size: 20px;
+    fill: white;
+}
+
+#shop-circle:hover {
+    fill: rgb(0, 255, 0);
+    transition: 0.8s;
+}
+
+#shop-text:hover {
+    fill: rgb(0, 255, 0);
+    font-size: 20px;
+    letter-spacing: 0.25em;
+    transition: 0.7s;
+}
+
+#quiz-circle {
+    fill: rgb(0, 51, 102);
+    stroke: red;
+    stroke-width: 5;
+}
+
+#quiz-text {
+    font-size: 18px;
+    fill: white;
+}
+
+#quiz-circle:hover {
+    fill: rgb(0, 255, 0);
+    transition: 0.8s;
+}
+
+#quiz-text:hover {
+    fill: rgb(0, 255, 0);
+    font-size: 20px;
+    letter-spacing: 0.25em;
+    transition: 0.7s;
+}
+
+#gallery-circle {
+    fill: rgb(0, 51, 102);
+    stroke: red;
+    stroke-width: 5;
+}
+
+#gallery-text {
+    font-size: 17px;
+    fill: white;
+}
+
+#gallery-circle:hover {
+    fill: rgb(0, 255, 0);
+    transition: 0.8s;
+}
+
+#gallery-text:hover {
+    fill: rgb(0, 255, 0);
+    font-size: 21px;
+    letter-spacing: 0.25em;
+    transition: 0.7s;
+}
+
+#aboutus-circle {
+    fill: rgb(0, 51, 102);
+    stroke: red;
+    stroke-width: 5;
+}
+
+#aboutus-text {
+    font-size: 16px;
+    fill: white;
+}
+
+#aboutus-circle:hover {
+    fill: rgb(0, 255, 0);
+    transition: 0.8s;
+}
+
+#aboutus-text:hover {
+    fill: rgb(0, 255, 0);
+    font-size: 21px;
+    letter-spacing: 0.25em;
+    transition: 0.7s;
+}
+
+/* CSS for lines */
+line {
+    width: 200px;
+    height: 200px;
+    stroke: red;
+    stroke-width: 4;
+}
+
+/* CSS for bottom to top button */
+.bottom-to-top {
+    position: absolute;
+    float: left;
+    bottom: -30px;
+    margin-left: 10px;
+}
+
+/* CSS for link to page editor link */
+.page-editor {
+    margin-top: 250px;
+    margin-left: 500px;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    border-color: blue;
+    width: 400px;
+    border-width: 5px;
+}
+
+.page-editor a {
+    font-size: 20px;
+    color: white;
+}

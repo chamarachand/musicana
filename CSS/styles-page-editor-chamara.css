@@ -1,0 +1,25 @@
+body {
+    background-color: #D3D3D3;
+}
+
+main {
+    width: fit-content;
+    margin: auto;
+}
+
+p,
+li,
+a {
+    font-size: 1.2rem;
+}
+
+h1,
+.my-details,
+#jump-to-bottom,
+#jump-to-top {
+    text-align: center;
+}
+
+.page {
+    margin-bottom: 2rem;
+}

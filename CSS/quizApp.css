@@ -1,0 +1,436 @@
+body {
+	background-image : url('../Images/quizbackground.jpg');
+	background-attachment : fixed;
+	background-size : cover;
+	margin : 0;
+}
+
+
+/*the outer division or the parent division for all the main divisions associated with the quiz*/
+
+#quiz-box {
+	font-family : 'segoe UI';
+	display : grid;
+	width : 62%;
+	height : 570px;
+	position : relative;
+	top : 35px;
+	left : 20%;
+	grid-template-rows : 1fr 7fr 5fr;
+	border-radius : 25px;
+	row-gap : 1ch;
+	background-color : rgb(43,43,43);
+	
+}
+
+
+
+/*division that contains both the divisions that contains the question and the timer*/
+#count {
+	border-radius : 25px;
+	background-color : #DFDCE3;
+}
+
+
+
+/*common styling for the divisions contatining the question counter and the timer*/
+.counter {
+	
+	float : left;
+	width : 50%;
+	height : 100%;
+	box-sizing : border-box;
+}
+
+
+
+/*division containing both the divisions containing image and the question*/
+
+#content-box {
+	background-color : #00303F;
+	border : 4px solid black;
+	overflow : hidden;
+	border-radius : 25px;
+}
+
+
+
+/*common styling for the divisions containing the image and the question*/
+
+.second-set {
+	width : 50%;
+	height : 100%;
+	float : left;
+	box-sizing : border-box;
+}
+	
+
+
+/*division that contains the image*/
+
+#pic-box{
+	display : block;
+	height : 100%;
+	width : 50%;
+}
+
+
+
+
+/*image inside the pic box*/
+#pic-box img {
+	border-radius : 30px;
+	box-shadow: 7px 7px 3px lightblue;
+	width : 85%;
+	height : 85%;
+	position :relative;
+	left : 40px;
+	top : 25px;
+}
+
+
+
+
+/*box containing the question*/
+
+#question {
+	display : flex;
+	text-align : center;
+	justify-content : center;
+	align-items : center;
+	font-weight : 1000;
+	font-size : 25px;
+	color : white;
+	
+}
+
+
+
+
+/*div that contains the 4 choices, NEXT button and the validation pane which is kept hidden initially*/
+
+#inner-container {
+	background-color : #e4decd;
+	height : 98%;
+	box-sizing : border-box;
+	border-radius : 25px;
+}
+
+
+
+/*Common styling for the 4 divisions containing the options*/
+
+.choice {
+	position : relative;
+	display : flex;
+	border : 4px solid black;
+	margin : 10px;
+	width : 40%;
+	height : 17%;
+	border-radius : 30px;
+	float : left;
+	left : 10px;
+}
+
+
+
+
+/*radio button inside the option divisions*/
+input[type = "radio"] {
+	position : relative;
+}
+
+
+
+/*options written inside the option divisions*/
+
+.choice label {
+	display : flex;
+	align-items : center;
+	justify-content : center;
+	width : 100%;
+	height : 100%;
+	cursor : pointer;
+} 
+
+
+
+/*The below 4 stylings for the four option divisions are to position those options individually at proper places*/
+
+/*division relavant to option1*/
+
+#div-option1 {
+	position : relative;
+	left : 50px;
+	top : 10px;
+}
+
+
+
+/*division relavant to option2*/
+
+#div-option2 {
+	position : relative;
+	left : 75px;
+	top : 10px;	
+}
+
+
+
+/*division relavant to option3*/
+
+#div-option3 {
+	position : relative;
+	left : 50px;
+	top : 35px;
+}
+
+
+
+/*division relavant to option4*/
+
+#div-option4 {
+	position : relative;
+	left : 75px;
+	top : 25px;
+	top : 35px;
+}
+
+
+
+/*common styling for the 4 divisions containing the options during mouse hover*/
+
+.choice:hover {
+	background-image : linear-gradient(135deg, #f34079 40%, #fc894d);	
+}
+
+
+
+/*NEXT button in the quiz box*/
+
+#button {
+	position : absolute;
+	top : 525px;
+	left :39%; 
+	padding : 8px 65px;
+	text-align : center;
+	background-color : white;
+	color :  #008CBA;
+	font-size : 15px;
+	border-radius : 20px;
+	border : 2px solid #008CBA;
+	transition-duration : 0.4s;
+	cursor : pointer;
+}
+
+
+/*styling NEXT button during a mouse hover*/
+
+#button:hover {
+	background-color : #008CBA;
+	color : white;
+}
+
+
+
+/*The falidation pane that appear when user skips a question without selecting any choice*/
+
+#option-validator {
+	display : none;   
+	position : absolute;
+	top : 378px;
+	left : 29%;
+	color : #393939;
+	border-radius : 20px;
+	background-color : #DFDCE3;
+	width : 350px;
+	height : 190px;
+	justify-content : center;
+	align-items : center;
+    animation : mymove 2s;
+	text-align : center;
+}
+
+
+
+/*Animation that makes the validation box to float and appear from down*/
+
+@keyframes mymove {
+	from {top : 650px;}
+	to {top : 378px;}
+}
+
+
+/*The text in the validation pane*/
+
+#validator-head {
+	position :absolute;
+	top : 20px;
+	font-size : 28px;	
+}
+
+/*stylings for the continue button used in the validation pane after a mouse hover*/
+
+#continue:hover {
+  background-color: #f44336;
+  color: white;
+  font-size : 16px;
+}
+
+
+
+/*continue button that appears in the validation pane*/
+
+#continue {
+	position : absolute;
+	bottom : 0;
+	width : 100%;
+	padding : 13px 60px;
+	border-radius : 20px;
+	transition-duration : 0.4s;
+	font-size : 15px;
+	color : #393939;
+	cursor : pointer;
+}
+
+
+
+/*box that contains the feedback at the end of the game*/
+
+#feedback-pane {
+	display : none;
+	width : 600px;
+	height : 575px;
+	position : absolute;
+	top : 0;
+	left : 18%;
+	background-color : #CAE4DB;
+	z-index : 1;
+	border-radius : 25px;
+	box-sizing : border-box;
+	text-align : center;
+	border : 2px solid #555555;
+}
+
+
+
+/*reset button in the feedback pane*/
+
+.feedbackbtn {
+	background-color : #CAE4DB;
+	padding : 12px  50px;
+	text-align : center;
+	font-size : 16px;
+	color : #555555;
+	border-radius : 15px;
+	cursor : pointer;
+	position : absolute;
+	top : 450px;
+	left : 170px;
+	cursor : pointer;
+
+}
+
+
+
+/*styling RESET button during hover*/
+
+.feedbackbtn:hover {
+	background-color : #555555;
+	color : white;
+}
+
+
+
+/*common stylings for the content written inside the feedback box*/
+
+.feedback-content {
+	color : #555555;
+}
+
+
+
+/*Stylings for the start frame*/
+
+#start-pane {
+	display : flex;
+	width : 64%;
+	height : 518px;
+	position : absolute;
+	top : 170px;
+	left : 19%;
+	background-image : url('../images/images-aakif/startpaneimage.jpg');
+	z-index : 1;
+	border-radius : 50px;
+	box-sizing : border-box;
+	text-align : center;
+	justify-content : center;
+	align-items : center;   
+}
+
+
+
+/*Stylings for the start pane*/
+
+#startbtn {
+	background-color : transparent;
+	padding : 25px  120px;
+	text-align : center;
+	font-size : 20px;
+	color : black;
+	border :  4px solid #262626;
+	border-radius : 50px;
+	cursor : pointer;
+	transition-duration : 0.4s;
+	font-family : Waterfall;
+	position : absolute;
+	top : 0;
+	width : 100%;
+}
+
+
+/*stylings for the start button after a mouse hover*/
+
+#startbtn:hover {
+  background-color: #f44336;
+  color: white;
+  font-size : 16px;
+}
+
+
+/*this is the title 'Quiz' used in the start pane*/
+
+#start-head {
+	font-size : 90px;
+	font-family : 'Srisakdi';
+	position : absolute;
+	top : 100px;	
+	left : 150px;
+	color : #262626 ;
+}
+
+
+/*This is the icon that is used in the start pane*/
+
+#icon {
+	position : absolute;
+	top : 180px;
+	left: 50px;
+}
+
+
+/*This is for the avatar that is used as a link for the page editor page*/
+
+#myavatar {
+	color : white;
+	position : absolute;
+	bottom : -5%;
+	left : 1%;
+	text-decoration : none;
+	font-size : 18px;
+}
+
+#avatar-pic {
+	height : 50px;
+	width : 50px;
+}

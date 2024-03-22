@@ -1,0 +1,238 @@
+/* General */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../Images/Chamara/CHA\ copy2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    animation: zoom-in 4s forwards;
+}
+
+@keyframes zoom-in {
+    0% {
+        background-size: 104%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+h1 {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10rem;
+    margin-left: 28rem;
+    margin-bottom: 4.8rem;
+    margin-top: 4rem;
+    color: #222;
+    width: 500px;
+}
+
+h1::before {
+    content: attr(data-text);
+    position: absolute;
+    color: white;
+    width: 10rem;
+    overflow: hidden;
+    filter: drop-shadow(0 0 20px #fff);
+    animation: text-animation 2.5s linear forwards;
+}
+
+@keyframes text-animation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#musicana-logo {
+    width: 50px;
+    animation: fade-in 2.5s linear forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Group members' details */
+.group-members {
+    margin-left: 4rem;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    color: black;
+    background-color: #F9F9F9;
+    opacity: 0;
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin-top: 1.5rem;
+    box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+.member img {
+    width: 50px;
+}
+
+.member p {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+#member-1 {
+    animation: display-member-1 0.8s forwards;
+}
+
+@keyframes display-member-1 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 10px;
+        opacity: 0.95;
+    }
+}
+
+#member-2 {
+    animation: display-member-2 0.8s 0.6s forwards;
+}
+
+@keyframes display-member-2 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 10px;
+        opacity: 0.85;
+    }
+}
+
+#member-3 {
+    animation: display-member-3 0.8s 1.2s forwards;
+}
+
+@keyframes display-member-3 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 10px;
+        opacity: 0.85;
+    }
+}
+
+#member-4 {
+    animation: display-member-4 0.8s 1.8s forwards;
+}
+
+@keyframes display-member-4 {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 10px;
+        opacity: 0.85;
+    }
+}
+
+/* dot loader */
+footer {
+    position: absolute;
+    width: 99vw;
+    bottom: 3rem;
+}
+
+.dots-preloader {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    margin: 2px 3px;
+    background-color: #FFB6C1;
+    box-shadow: 0 0 0 0.7px whitesmoke;
+    animation: preloader 1.25s ease-in-out infinite;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.25s;
+    background-color: #FFDAB9;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.50s;
+    background-color: #FFB6C1;
+}
+
+.dot:nth-child(4) {
+    animation-delay: 0.75s;
+    background-color: #FFDAB9;
+}
+
+.dot:nth-child(5) {
+    animation-delay: 1s;
+    background-color: #FFB6C1;
+}
+
+
+@keyframes preloader {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+}
+
+/* Link to page editor page */
+.page-editor-link {
+    position: absolute;
+    width: 99vw;
+    /* left: 17%; */
+    bottom: -2.25rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 3rem;
+    animation: fade-in 2.8s linear forwards;
+}
+
+.page-editor-link a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #E5E5E5;
+}
+
+.page-editor-link a:hover {
+    color: white;
+    text-shadow: 0.05px 0.05px 0 white;
+}

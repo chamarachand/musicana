@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" href="../Images/Chamara/favicon-musicana.ico">
+    <link rel="stylesheet" href="../CSS/styles-payment-form.css">
+    <link rel="stylesheet" href="../CSS/scroll-bar.css">
+    <script src="https://kit.fontawesome.com/5ed68925c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <img src="../Images/Chamara/MUSICANA-(2)-copy.png" alt="logo">
+        </a>
+    </header>
+
+    <main>
+        <section class="order-summary">
+            <h2>Order Summary <i class="fa-regular fa-folder-open"></i></h2>
+
+            <select name="lang-dropdown" id="lang-dropdown">
+                <option>English</option>
+            </select>
+
+            <div class="order-summary-container">
+                <label>Reference:</label>
+                <p id="reference-no">9000000000001111110</p>
+
+                <label>Description:</label>
+                <p id="summary-description">makePayment</p>
+
+                <label>Amount (USD):</label>
+                <p id="summary-amount">$0.00</p>
+            </div>
+        </section>
+
+        <section class="order-details">
+            <form id="form">
+                <div class="payment-details">
+                    <h2>Payment Details <i class="fa-solid fa-circle-dollar-to-slot"></i></h2>
+
+                    <p><span class="asterisk-symbol">*</span>Indicates a required field</p>
+
+                    <div class="payment-details-container">
+                        <div>
+                            <label for="card-number">Card Number<span class="asterisk-symbol">*</span></label>
+                            <input type="text" name="card-number" class="form-control numeric-only required"
+                                id="card-number" placeholder="XXXXXXXXXXXXXXXX" maxlength="16" data-fixed-length>
+                            <div class="error-box"></div>
+                        </div>
+
+                        <div>
+                            <label for="cardholder-name">Cardholder's name<span class="asterisk-symbol">*</span></label>
+                            <input type="text" name="cardholder-name" class="form-control string-only required"
+                                id="cardholder-name" data-minlength="5" maxlength="75">
+                            <div class="error-box"></div>
+                        </div>
+                    </div>
+
+                    <div class="payment-details-container">
+                        <div>
+                            <label for="card-expiry-date-month">Expiry Date<span
+                                    class="asterisk-symbol">*</span></label>
+                            <select name="card-expiry-date-month" class="form-control required"
+                                id="card-expiry-date-month">
+                                <option value="" disabled selected>MM</option>
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+
+                            <span>/</span>
+
+                            <label for="card-expiry-date-year" id="expiry-date-year-hidden">Expiry Date<span
+                                    class="asterisk-symbol">*</span></label>
+                            <select name="card-expiry-date-year" class="form-control required"
+                                id="card-expiry-date-year">
+                                <option value="" disabled selected>YYYY</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
+
+                            <div class="error-box"></div>
+                        </div>
+
+                        <div id="security-code">
+
+                            <label for="card-security-code">Security Code<span class="asterisk-symbol">*</span></label>
+                            <input type="text" name="card-security-code" class="form-control numeric-only required"
+                                id="card-security-code" size="2" maxlength="3" data-fixed-length>
+
+                            <img src="../Images/Chamara/credit-card-2.png" alt="Vector image of a credit cart"
+                                id="credit-cart-vector">
+                            <p id="description">Last 3 digits on the back of the card</p>
+
+                            <div class="error-box"></div> <!--*-->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="billing-details">
+                    <h2>Billing Details <i class="fa-solid fa-truck-fast"></i></h2>
+                    <div class="billing-details-container">
+                        <label for="contact-name">Contact Name<span class="asterisk-symbol">*</span></label>
+                        <div>
+                            <input type="text" name="contact-name" class="form-control string-only required"
+                                id="contact-name" data-minlength="5" maxlength="150">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="address-1">Address 1<span class="asterisk-symbol">*</span></label>
+                        <div>
+                            <input type="text" name="address-1" class="form-control required" id="address-1"
+                                maxlength="100">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="address-2">Address 2</label>
+                        <div>
+                            <input type="text" name="address-2" class="form-control" id="address-2" maxlength="100">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="address-3">Address 3</label>
+                        <div>
+                            <input type="text" name="address-3" class="form-control" id="address-3" maxlength="100">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="town">Town/City<span class="asterisk-symbol">*</span></label>
+                        <div>
+                            <input type="text" name="town" class="form-control required" id="town" maxlength="25">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="state">State/Region</label>
+                        <div>
+                            <input type="text" name="state" class="form-control" id="state" maxlength="20">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="postcode">Postcode/Zip Code<span class="asterisk-symbol">*</span></label>
+                        <div>
+                            <input type="text" name="postcode" class="form-control required" id="postcode"
+                                maxlength="7">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="country">Country<span class="asterisk-symbol">*</span></label>
+                        <div>
+                            <select name="country" class="form-control required" id="country">
+                                <option value="Australia">Australia</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Canada">Canada</option>
+                                <option value="China">China</option>
+                                <option value="Germany">Germany</option>
+                                <option value="India">India</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Sri Lanka" selected>Sri Lanka</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="United States">United States (US)</option>
+                                <option value="United Kingdom">United Kingdom (UK)</option>
+                            </select>
+                            <div class="error-box"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-details">
+                    <h2>Contact Details <i class="fa-solid fa-address-card"></i></h2>
+
+                    <div class="contact-details-container">
+                        <label for="phone-number">Phone Number<span class="asterisk-symbol">*</span></label>
+                        <div>
+                            <input type="tel" class="form-control numeric-only required" name="phone-number"
+                                id="phone-number" maxlength="10">
+                            <div class="error-box"></div>
+                        </div>
+
+                        <label for="email">Email Address<span class="asterisk-symbol">*</span></label>
+                        <div>
+                            <input type="email" class="form-control required" name="email" id="email" data-minlength="5"
+                                maxlength="100">
+                            <div class="error-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="reset" class="btn">Reset</button>
+                    <button type="submit" class="submit btn">Make Payment</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="payment-loading-box">
+            <p>Your Payment is being Proccessed</p>
+            <div class="spinner"></div>
+        </div>
+
+        <div class="payment-success-box">
+            <i class="fa-solid fa-xmark" id="psbox-close-button"></i>
+            <img src="../Images/Chamara/payment-4.jpg" alt="A vector image of a mobile phone and a credit card">
+            <div class="payment-success-box-content">
+                <h3>Payment Successfull!</h3>
+                <img src="../Images/Chamara/shield-tick.png" alt="A vector image of a tick with a shield"
+                    id="payment-success-icon">
+                <p>Thank You for Shopping with Us</p>
+            </div>
+        </div>
+
+        <div class="payment-confirm-box">
+            <i class="fa-solid fa-xmark" id="pcbox-close-button"></i>
+            <img src="../Images/Chamara/almost-there.jpg"
+                alt="A vector image of a person waiting patiently with a laptop in his hand">
+            <div class="payment-confirm-box-content">
+                <h3>You're Almost There!</h3>
+                <p>Please Confirm the Payment Details</p>
+
+                <p class="confirming-label">Name:</p>
+                <p id="name-confirm"></p>
+
+                <p class="confirming-label">Total:</p>
+                <p id="total-confirm"></p>
+
+                <button type="button" class="payment-confirm btn">Confirm</button>
+            </div>
+        </div>
+
+        <div class="page-editor-link">
+            <a href="page-editor-chamara.html" target="_blank"><i class="fa-solid fa-laptop-code"></i> Page Editor</a>
+        </div>
+
+        <div id="overlay"></div>
+
+    </main>
+
+    <script src="../Javascript/script-payment-form.js"></script>
+</body>
+
+</html>

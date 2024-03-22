@@ -1,0 +1,120 @@
+body {
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	background-image : url('../Images/images-aakif/pageeditorbackground1.jpg');
+	
+}
+
+/*outermost  div contatining the content*/
+
+#template {
+	position : relative;
+	height : 670px;
+	width : 680px;
+	padding : 5px;
+	border-radius : 20px;
+	margin-top : 10px;
+	color : white;
+	background-image : url('../Images/images-aakif/pageeditorbackground2.jpg');
+}
+
+
+
+/*editor image*/
+
+#editor-image {
+	height : 250px;
+	width : 210px;
+	position : relative;
+	top : 20px;
+	left : 40px;
+	filter: drop-shadow(0 0 0.75rem rgb(115 115 115)); /*mdn web docs*/
+	border-radius : 20px;
+}
+
+
+/*editor's name*/
+
+#creator-name {
+	color : #a0d2eb;
+	font-size : 30px;
+	font-weight : bold
+}
+
+
+
+/*editor personal information*/
+
+#info {
+	position : relative;
+	height : 280px;
+	width : 370px;
+	position : absolute;
+	left : 310px;
+	bottom : 390px;
+	
+	
+}
+
+
+/*stylings for the table used to enter the personal */
+
+th {
+	text-align : left;
+	width : 150px;
+}
+
+
+td {
+	text-align : left;
+	width : 150px;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 30px;
+	font-size : 17px;
+}
+
+
+/*sub topics for each content*/
+
+h4 {
+	color : #a0d2eb;
+	font-size : 17px;
+	font-weight : bold;
+}
+
+
+/*paragraph related to quiz*/
+
+#quiz-description {
+	height : 200px;
+	width : 340px;	
+	position : absolute;
+	left : 20px;
+	bottom : 180px;
+}
+
+/*paragraph related student details*/
+
+#details-description {
+	position : absolute;
+	left : 20px;
+	bottom : 10px;	
+	height : 200px;
+	width : 340px;
+}
+
+/*paragraph related to extra content page*/
+
+#content-description {
+	height : 200px;
+	width : 310px;	
+	position : absolute;
+	left : 370px;
+	bottom : 180px;
+}
+
+

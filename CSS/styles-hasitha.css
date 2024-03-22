@@ -1,0 +1,96 @@
+/* Set a background image */
+body { 
+    background-image: url(../Images/editor-bg.jpg);
+    background-size: cover;
+}
+
+#main-head {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    word-spacing: 0.5em;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+}
+
+/* CSS for editor's image */
+#student-image {
+    width: 160px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* Student information */
+#my-details {
+    color: white;
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: -180px;
+    width: 400px;
+}
+
+/* CSS for three tasks did my student */
+#diagram-svg {
+    color: white;
+    float: right;
+    width: 500px;
+    margin-right: 20px;
+    margin-top: -200px; 
+}
+
+#diagram-svg h2 {
+    color: aqua;
+}
+
+#diagram-svg ul {
+    font-size: 20px;
+}
+
+#diagram-svg a {
+    color: aqua;
+}
+
+#image-gallery {
+    color: white;
+    float: left;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#image-gallery h2 {
+    color: aqua;
+}
+
+#image-gallery ul {
+    font-size: 20px;
+}
+
+#image-gallery a {
+    color: aqua;
+}
+
+#content-page {
+    color: white;
+    float: right;
+    width: 500px;
+    margin-right: 20px;
+    margin-top: 25px; 
+}
+
+#content-page h2 {
+    color: aqua;
+}
+
+#content-page ul {
+    font-size: 20px;
+}
+
+#content-page a {
+    color: aqua;
+}
+
+
+
+
